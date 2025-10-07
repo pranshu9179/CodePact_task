@@ -1,0 +1,6 @@
+<?xml version="1.0" standalone="no"?>
+<svg id="Group" width="318" height="304" viewBox="0 0 318 304" fill="none" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; max-height: 100%;">
+<path d="M2.32092 97.4787C-12.8227 175.277 103.984 263.365 263.229 294.236C278.628 297.228 302.492 301.133 317.453 302.848C304.353 301.06 282.386 297.009 268.848 293.761C139.416 262.599 51.5288 173.965 63.8626 95.4375C71.3067 48.0727 127.155 12.8205 189.919 1.14355C98.2182 8.51465 12.5383 45.0782 2.32092 97.4787Z" stroke-width="10" stroke="white" stroke-dasharray="0,0,0,1157.17626953125"><animate attributeType="XML" attributeName="stroke-dasharray" restart="always" repeatCount="indefinite" begin="0s" dur="10s" values="0,0,0,1157.17626953125; 
+          0,578.588134765625,578.588134765625,0; 
+          1157.17626953125,0,0,0" keyTimes="0; 0.5; 1" fill="freeze"></animate></path>
+</svg>

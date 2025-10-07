@@ -1,0 +1,12 @@
+<?xml version="1.0" standalone="no"?>
+<svg id="Group" width="319" height="304" viewBox="0 0 319 304" fill="none" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; max-height: 100%;">
+<path d="M2.86743 97.4787C-12.2762 175.277 104.53 263.365 263.775 294.236C279.174 297.228 303.039 301.133 318 302.848C304.9 301.06 282.933 297.009 269.395 293.761C139.963 262.599 52.0753 173.965 64.4091 95.4375C71.8532 48.0727 127.702 12.8205 190.465 1.14355C98.7647 8.51465 13.0848 45.0782 2.86743 97.4787Z" stroke="url(#paint0_linear_3627_5197)" stroke-width="10" stroke-dasharray="0,0,0,1157.17626953125"><animate attributeType="XML" attributeName="stroke-dasharray" restart="always" repeatCount="indefinite" begin="0s" dur="10s" values="0,0,0,1157.17626953125; 
+          0,578.588134765625,578.588134765625,0; 
+          1157.17626953125,0,0,0" keyTimes="0; 0.5; 1" fill="freeze"></animate></path>
+<defs>
+<linearGradient id="paint0_linear_3627_5197" x1="159.773" y1="1.14355" x2="159.773" y2="302.848" gradientUnits="userSpaceOnUse">
+<stop stop-color="#77C043"></stop>
+<stop offset="1" stop-color="#0081C4"></stop>
+</linearGradient>
+</defs>
+</svg>

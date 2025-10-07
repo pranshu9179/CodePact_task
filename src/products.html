@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Products - Utkarsh India</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-white text-gray-900">
+    <!-- Navbar mount (same as other pages) -->
+    <div id="navbar-placeholder" class="sticky top-0 z-50"></div>
+
+    <!-- ✅ Wrap entire content inside a <main> for lazy-load detection -->
+    <main class="mt-16 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8 sm:py-10">
+      <!-- Heading section with logo and View More -->
+      <div class="mb-6 sm:mb-8">
+        <div
+          class="flex flex-col md:flex-row items-center justify-between mb-4 sm:mb-6 gap-3 sm:gap-4"
+        >
+          <!-- Logo + PRODUCTS -->
+          <div class="flex items-center gap-3 flex-shrink-0">
+            <img
+              src="/src/images/utkarsh-icon-animation.svg"
+              alt="Utkarsh Logo"
+              class="h-12 w-12 sm:h-14 sm:w-14"
+            />
+            <h1
+              class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-[#19a361] to-[#2277b4] inline-block text-transparent bg-clip-text"
+            >
+              PRODUCTS
+            </h1>
+          </div>
+
+          <!-- View More link -->
+          <div class="flex items-center justify-end w-full md:w-auto">
+            <a
+              href="#"
+              class="group flex items-center text-sm sm:text-base text-gray-700 hover:text-blue-700 transition-colors"
+            >
+              <span class="mr-2 text-lg sm:text-xl font-medium">View More</span>
+              <svg
+                class="w-4 h-4 sm:w-5 sm:h-5 text-gray-700 transition-transform group-hover:translate-x-1"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Description text positioned below the heading -->
+        <div class="w-full md:w-3/4 lg:w-1/2 mx-auto">
+          <p
+            class="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed"
+          >
+            Our range of advanced engineering products & solutions is designed
+            to meet the precise requirements of clients across industries.
+            Utkarsh's proficiency is defined by its diverse product lines,
+            ranging from solar structures to crash barriers. As the best steel
+            product manufacturer in India, we take pride in offering products
+            that consistently rank among our best-sellers. Below are a few that
+            have made it to the top of the list at Utkarsh India.
+          </p>
+        </div>
+      </div>
+
+      <!-- Product grid -->
+      <div>
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4"
+        >
+          <!-- Column 1: 1 large image -->
+          <article
+            class="relative rounded-lg overflow-hidden shadow hover:shadow-lg transition h-[250px] sm:h-[280px] md:h-[340px] lg:h-[420px]"
+          >
+            <img
+              src="/src/images/image 1.webp"
+              alt="Metal Beam Crash Barrier"
+              class="w-full h-full object-cover"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"
+            ></div>
+            <div class="absolute bottom-0 left-0 p-3 sm:p-4 md:p-5">
+              <h3 class="text-white text-sm sm:text-base md:text-lg font-bold">
+                Metal Beam Crash Barrier
+              </h3>
+            </div>
+          </article>
+
+          <!-- Column 2: 2 stacked images -->
+          <div class="flex flex-col gap-3 sm:gap-4">
+            <article
+              class="relative rounded-lg overflow-hidden shadow hover:shadow-lg transition h-[120px] sm:h-[140px] md:h-[165px] lg:h-[205px]"
+            >
+              <img
+                src="/src/images/image 2.webp"
+                alt="High Mast Lighting Systems"
+                class="w-full h-full object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"
+              ></div>
+              <div class="absolute bottom-0 left-0 p-2 sm:p-3">
+                <h3
+                  class="text-white text-xs sm:text-sm md:text-base font-bold"
+                >
+                  High Mast Lighting Systems
+                </h3>
+              </div>
+            </article>
+            <article
+              class="relative rounded-lg overflow-hidden shadow hover:shadow-lg transition h-[120px] sm:h-[140px] md:h-[165px] lg:h-[205px]"
+            >
+              <img
+                src="/src/images/image 3.webp"
+                alt="Solar Structures"
+                class="w-full h-full object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"
+              ></div>
+              <div class="absolute bottom-0 left-0 p-2 sm:p-3">
+                <h3
+                  class="text-white text-xs sm:text-sm md:text-base font-bold"
+                >
+                  Solar Structures
+                </h3>
+              </div>
+            </article>
+          </div>
+
+          <!-- Column 3: 1 large image -->
+          <article
+            class="relative rounded-lg overflow-hidden shadow hover:shadow-lg transition h-[250px] sm:h-[280px] md:h-[340px] lg:h-[420px]"
+          >
+            <img
+              src="/src/images/image 4.webp"
+              alt="Steel Tubular Pole"
+              class="w-full h-full object-cover"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"
+            ></div>
+            <div class="absolute bottom-0 left-0 p-3 sm:p-4 md:p-5">
+              <h3 class="text-white text-sm sm:text-base md:text-lg font-bold">
+                Steel Tubular Pole
+              </h3>
+            </div>
+          </article>
+
+          <!-- Column 4: 2 stacked images -->
+          <div class="flex flex-col gap-3 sm:gap-4">
+            <article
+              class="relative rounded-lg overflow-hidden shadow hover:shadow-lg transition h-[120px] sm:h-[140px] md:h-[165px] lg:h-[205px]"
+            >
+              <img
+                src="/src/images/image 5.webp"
+                alt="Steel Tubes & Pipes"
+                class="w-full h-full object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"
+              ></div>
+              <div class="absolute bottom-0 left-0 p-2 sm:p-3">
+                <h3
+                  class="text-white text-xs sm:text-sm md:text-base font-bold"
+                >
+                  Steel Tubes & Pipes
+                </h3>
+              </div>
+            </article>
+            <article
+              class="relative rounded-lg overflow-hidden shadow hover:shadow-lg transition h-[120px] sm:h-[140px] md:h-[165px] lg:h-[205px]"
+            >
+              <img
+                src="/src/images/image 6.webp"
+                alt="HDPE Pipes"
+                class="w-full h-full object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"
+              ></div>
+              <div class="absolute bottom-0 left-0 p-2 sm:p-3">
+                <h3
+                  class="text-white text-xs sm:text-sm md:text-base font-bold"
+                >
+                  HDPE Pipes
+                </h3>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer spacer -->
+    <div class="h-12"></div>
+
+    <!-- Navbar loader (unchanged) -->
+    <script>
+      fetch("navbar.html")
+        .then((r) => r.text())
+        .then(
+          (html) =>
+            (document.getElementById("navbar-placeholder").innerHTML = html)
+        )
+        .catch(console.error);
+
+      (function () {
+        let productsLoaded = false;
+        const placeholder = document.getElementById("products-placeholder");
+        if (!placeholder) return;
+
+        function loadProducts() {
+          if (productsLoaded) return;
+          fetch("products.html")
+            .then((res) => res.text())
+            .then((html) => {
+              const parser = new DOMParser();
+              const doc = parser.parseFromString(html, "text/html");
+              const mainContent = doc.querySelector("main");
+              if (mainContent) {
+                Array.from(mainContent.children).forEach((node) => {
+                  placeholder.appendChild(document.importNode(node, true));
+                });
+              }
+              productsLoaded = true;
+            })
+            .catch((err) =>
+              console.error("Failed to load products.html:", err)
+            );
+        }
+
+        const rect = placeholder.getBoundingClientRect();
+        if (rect.top < window.innerHeight) {
+          loadProducts();
+          return;
+        }
+
+        const observer = new IntersectionObserver(
+          (entries, obs) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                loadProducts();
+                obs.disconnect();
+              }
+            });
+          },
+          { root: null, rootMargin: "400px", threshold: 0 }
+        );
+
+        observer.observe(placeholder);
+      })();
+    </script>
+  </body>
+</html>
