@@ -4,86 +4,50 @@
     <meta charset="UTF-8" />
     <title>Home Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./output.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <div id="navbar-placeholder" class="sticky"></div>
-    <div class="mt-16 mx-auto px-4 py-6">
+    <div id="navbar-placeholder" class="sticky top-0 z-50"></div>
+
+    <div class="mt-16 mx-auto px-4 sm:px-6 lg:px-8 py-6 max-w-7xl">
       <h1
-        class="text-5xl text-left md:text-6xl font-bold mb-1 bg-gradient-to-r from-[#19a361] to-[#2277b4] inline-block text-transparent bg-clip-text"
+        class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-1 bg-gradient-to-r from-[#19a361] to-[#2277b4] inline-block text-transparent bg-clip-text"
       >
         INDIA'S TOP
       </h1>
       <br />
       <h1
-        class="text-5xl md:text-6xl font-bold mb-2 mt-1 gap-2 bg-gradient-to-r from-[#19a361] to-[#2277b4] inline-block text-transparent bg-clip-text"
+        class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-2 mt-1 gap-2 bg-gradient-to-r from-[#19a361] to-[#2277b4] inline-block text-transparent bg-clip-text"
       >
         INFRASTRUCTURE COMPANY —
       </h1>
       <br />
       <h1
-        class="text-5xl md:text-6xl font-bold mb-6 mt-1 gap-2 bg-gradient-to-r from-[#19a361] to-[#2277b4] inline-block text-transparent bg-clip-text"
+        class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 mt-1 gap-2 bg-gradient-to-r from-[#19a361] to-[#2277b4] inline-block text-transparent bg-clip-text"
       >
         BUILDING THE NATION WITH PRIDE
       </h1>
 
       <!-- Subheading -->
-      <p class="text-2xl text-gray-700 mt-2 mb-1 max-w-3xl">
+      <p
+        class="text-base sm:text-lg md:text-xl text-gray-700 mt-2 mb-1 max-w-3xl"
+      >
         As the best infrastructure company in India and the most trusted partner
         for advanced infrastructure
       </p>
-      <p class="text-2xl text-gray-700 mb-8 max-w-3xl">
+      <p class="text-base sm:text-lg md:text-xl text-gray-700 mb-8 max-w-3xl">
         projects across sectors and geographies, we are on a continuous journey
         to forge stronger foundations for our country.
       </p>
 
-      <!-- <div
-        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 text-center mb-12"
-      >
-        <div
-          class="border-b border-gray-300 pb-4 mb-4 lg:border-b-0 lg:border-r lg:pr-4 lg:mb-0"
-        >
-          <div class="font-medium text-gray-700 text-xl mb-1">40000 + KM</div>
-          <div class="text-gray-700 text-sm">of roads<br />safeguarded</div>
-        </div>
-
-        <div
-          class="border-b border-gray-300 pb-4 mb-4 lg:border-b-0 lg:border-r lg:pr-4 lg:mb-0"
-        >
-          <div class="font-medium text-gray-700 text-xl mb-1">20000 KM</div>
-          <div class="text-gray-700 text-sm">of railways<br />electrified</div>
-        </div>
-
-        <div
-          class="border-b border-gray-300 pb-4 mb-4 lg:border-b-0 lg:border-r lg:pr-4 lg:mb-0"
-        >
-          <div class="font-medium text-gray-700 text-xl mb-1">100000 +</div>
-          <div class="text-gray-700 text-sm">
-            Telecom Towers<br /><span class="text-xs">bringing you closer</span>
-          </div>
-        </div>
-
-        <div
-          class="border-b border-gray-300 pb-4 mb-4 lg:border-b-0 lg:border-r lg:pr-4 lg:mb-0"
-        >
-          <div class="font-medium text-gray-700 text-xl mb-1">100000 +</div>
-          <div class="text-gray-700 text-sm">lighting masts<br />supplied</div>
-        </div>
-
-        <div>
-          <div class="font-medium text-gray-700 text-xl mb-1">2000000 +</div>
-          <div class="text-gray-700 text-sm">lighting poles<br />supplied</div>
-        </div>
-      </div> -->
-
       <div
-        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 text-center mb-12"
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 sm:gap-8 text-center mt-16 mb-8"
       >
         <div
           class="border-b border-gray-300 pb-4 mb-4 lg:border-b-0 lg:border-r lg:pr-4 lg:mb-0"
         >
           <div
-            class="flex justify-center items-center gap-2 font-medium text-gray-700 text-xl mb-1"
+            class="flex flex-col sm:flex-row justify-center items-center gap-2 font-medium text-gray-700 text-base sm:text-xl mb-1"
           >
             <img src="/src/images/animation 1.svg" alt="" class="h-16 w-14" />
             <span>40000 + KM<br />of roads<br />safeguarded</span>
@@ -94,7 +58,7 @@
           class="border-b border-gray-300 pb-4 mb-4 lg:border-b-0 lg:border-r lg:pr-4 lg:mb-0"
         >
           <div
-            class="flex justify-center items-center gap-2 font-medium text-gray-700 text-xl mb-1"
+            class="flex flex-col sm:flex-row justify-center items-center gap-2 font-medium text-gray-700 text-base sm:text-xl mb-1"
           >
             <img src="/src/images/animation 2.svg" alt="" class="h-16 w-14" />
             <span>20000 KM <br />of railways<br />electrified</span>
@@ -105,10 +69,10 @@
           class="border-b border-gray-300 pb-4 mb-4 lg:border-b-0 lg:border-r lg:pr-4 lg:mb-0"
         >
           <div
-            class="flex justify-center items-center gap-2 font-medium text-gray-700 text-xl mb-1"
+            class="flex flex-col sm:flex-row justify-center items-center gap-2 font-medium text-gray-700 text-base sm:text-xl mb-1"
           >
             <img src="/src/images/animation 3.svg" alt="" class="h-16 w-14" />
-            <span>100000 +<br />Telecom Towers<br />bringing you closer</span>
+            <span>100000 +<br />Telecom Towers</span>
           </div>
         </div>
 
@@ -116,7 +80,7 @@
           class="border-b border-gray-300 pb-4 mb-4 lg:border-b-0 lg:border-r lg:pr-4 lg:mb-0"
         >
           <div
-            class="flex justify-center items-center gap-2 font-medium text-gray-700 text-xl mb-1"
+            class="flex flex-col sm:flex-row justify-center items-center gap-2 font-medium text-gray-700 text-base sm:text-xl mb-1"
           >
             <img src="/src/images/animation 4.svg" alt="" class="h-16 w-14" />
             <span>100000 +<br />lighting masts<br />supplied</span>
@@ -125,12 +89,12 @@
 
         <div>
           <div
-            class="flex justify-center items-center gap-2 font-medium text-gray-700 text-xl mb-1"
+            class="flex flex-col sm:flex-row justify-center items-center gap-2 font-medium text-gray-700 text-base sm:text-xl mb-1"
           >
             <img
               src="/src/images/animation 5.svg"
               alt=""
-              class="h-16 w-14 mr-4"
+              class="h-16 w-14 mr-0 sm:mr-4"
             />
             <span>2000000 + <br />lighting poles<br />supplied</span>
           </div>
@@ -139,10 +103,14 @@
 
       <!-- Highlighted statement -->
       <div class="mb-8">
-        <span class="text-3xl md:text-4xl text-gray-600 font-medium">
+        <span
+          class="text-2xl sm:text-3xl md:text-4xl text-gray-600 font-medium"
+        >
           #1 backbone of India’s infrastructure
         </span>
-        <div class="text-3xl md:text-4xl text-green-400 font-medium">
+        <div
+          class="text-2xl sm:text-3xl md:text-4xl text-green-400 font-medium"
+        >
           We are Utkarsh India
         </div>
       </div>
@@ -151,19 +119,51 @@
     <!-- Placeholders for lazy-loading content -->
     <div id="about-placeholder" class="min-h-[8rem]"></div>
     <div id="products-placeholder" class="min-h-[8rem]"></div>
-    <div id="footer-placeholder"></div>
+    <div id="our-client-placeholder" class="min-h-[8rem]"></div>
+    <div id="footer-placeholder" class="min-h-[8rem]"></div>
 
     <script>
       // ---------- load navbar ----------
+
       fetch("navbar.html")
-        .then((response) => response.text())
-        .then(
-          (data) =>
-            (document.getElementById("navbar-placeholder").innerHTML = data)
-        )
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("navbar-placeholder").innerHTML = data;
+
+          // Reinitialize navbar interactivity manually after inserting HTML
+          const hamburger = document.querySelector("#hamburger");
+          const mobileMenu = document.querySelector("#mobile-menu");
+          const menuIcon = document.querySelector("#menu-icon");
+          const closeIcon = document.querySelector("#close-icon");
+          const mobileProductsBtn = document.querySelector(
+            "#mobile-products-btn"
+          );
+          const mobileProductsMenu = document.querySelector(
+            "#mobile-products-menu"
+          );
+          const mobileArrow = document.querySelector("#mobile-arrow");
+
+          // Toggle main mobile menu
+          if (hamburger && mobileMenu) {
+            hamburger.addEventListener("click", () => {
+              mobileMenu.classList.toggle("hidden");
+              menuIcon.classList.toggle("hidden");
+              closeIcon.classList.toggle("hidden");
+            });
+          }
+
+          // Toggle product dropdown inside mobile menu
+          if (mobileProductsBtn && mobileProductsMenu) {
+            mobileProductsBtn.addEventListener("click", () => {
+              mobileProductsMenu.classList.toggle("hidden");
+              mobileArrow.classList.toggle("rotate-180");
+            });
+          }
+        })
         .catch(console.error);
 
       // ---------- load footer ----------
+
       fetch("footer.html")
         .then((response) => response.text())
         .then(
@@ -232,7 +232,6 @@
             .then((html) => {
               const parser = new DOMParser();
               const doc = parser.parseFromString(html, "text/html");
-              // Extract main content of products page (excluding navbar)
               const mainContent = doc.querySelector("main");
               if (mainContent) {
                 placeholder.appendChild(document.importNode(mainContent, true));
@@ -267,49 +266,45 @@
 
       // ---------- lazy-load our_client.html ----------
       (function () {
-        let clientsLoaded = false;
+        let loaded = false;
         const placeholder = document.getElementById("our-client-placeholder");
         if (!placeholder) return;
-
-        function loadClients() {
-          if (clientsLoaded) return;
+        function load() {
+          if (loaded) return;
           fetch("our_client.html")
             .then((res) => res.text())
             .then((html) => {
               const parser = new DOMParser();
               const doc = parser.parseFromString(html, "text/html");
-              let nodes = doc.body
+              const nodes = doc.body
                 ? Array.from(doc.body.children)
                 : Array.from(doc.children);
-              nodes.forEach((node) => {
-                placeholder.appendChild(document.importNode(node, true));
-              });
-              clientsLoaded = true;
-            })
-            .catch((err) =>
-              console.error("Failed to load our_client.html:", err)
-            );
-        }
+              nodes.forEach((node) =>
+                placeholder.appendChild(document.importNode(node, true))
+              );
+              loaded = true;
 
+              if (typeof initOurClientsSection === "function")
+                initOurClientsSection();
+            })
+            .catch(console.error);
+        }
         const rect = placeholder.getBoundingClientRect();
         if (rect.top < window.innerHeight) {
-          loadClients();
+          load();
           return;
         }
-
-        const observer = new IntersectionObserver(
+        new IntersectionObserver(
           (entries, obs) => {
-            entries.forEach((entry) => {
-              if (entry.isIntersecting) {
-                loadClients();
+            entries.forEach((e) => {
+              if (e.isIntersecting) {
+                load();
                 obs.disconnect();
               }
             });
           },
           { root: null, rootMargin: "400px", threshold: 0 }
-        );
-
-        observer.observe(placeholder);
+        ).observe(placeholder);
       })();
     </script>
   </body>

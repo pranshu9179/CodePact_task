@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LED Pole Light</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-gradient-to-b from-gray-50 to-gray-100 text-gray-800 font-sans">
+    <!-- Navbar -->
+    <div id="navbar-placeholder" class="sticky top-0 z-50"></div>
+
+    <!-- Page Heading --> <div class="text-center mt-12 mb-10"> <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-3 tracking-tight"> Premium LED Pole Light </h1> <p class="text-gray-600 text-lg max-w-2xl mx-auto"> High-performance lighting designed for durability, efficiency, and elegance. </p> <div class="w-24 h-1 bg-blue-600 mx-auto mt-4 rounded-full"></div> </div>
+
+    <!-- Product Section -->
+    <section class="max-w-6xl mx-auto px-4 py-12">
+      <div
+        class="bg-white shadow-2xl rounded-2xl overflow-hidden flex flex-col md:flex-row transition-transform duration-500 hover:scale-[1.01]"
+      >
+        <!-- Left: Image Section -->
+        <div
+          class="md:w-1/2 p-6 flex flex-col items-center justify-center bg-gradient-to-b from-gray-50 to-gray-100"
+        >
+          <div
+            class="relative group rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500"
+          >
+            <img
+              id="main-image"
+              src="/src/images/light 1.webp"
+              alt="LED Pole Light"
+              class="w-72 h-72 object-contain rounded-lg transform group-hover:scale-105 transition-transform duration-500"
+            />
+          </div>
+
+          <!-- Thumbnail Gallery -->
+          <div class="flex justify-center mt-5 gap-4">
+            <img
+              src="/src/images/light 1.webp"
+              class="thumb w-16 h-16 object-cover rounded-md border-2 border-blue-600 cursor-pointer shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300"
+              alt="Thumbnail 1"
+            />
+            <img
+              src="/src/images/light 2.webp"
+              class="thumb w-16 h-16 object-cover rounded-md border border-gray-300 cursor-pointer shadow-sm hover:shadow-lg hover:border-blue-600 hover:scale-105 transition-all duration-300"
+              alt="Thumbnail 2"
+            />
+            <img
+              src="/src/images/light3.webp"
+              class="thumb w-16 h-16 object-cover rounded-md border border-gray-300 cursor-pointer shadow-sm hover:shadow-lg hover:border-blue-600 hover:scale-105 transition-all duration-300"
+              alt="Thumbnail 3"
+            />
+          </div>
+        </div>
+
+        <!-- Right: Product Info -->
+        <div class="md:w-1/2 p-8 md:p-10">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">
+            LED Pole Light
+          </h2>
+
+          <h3
+            class="text-lg font-semibold text-blue-700 mb-3 border-l-4 border-blue-500 pl-2"
+          >
+            Specifications
+          </h3>
+
+          <div
+            class="text-sm leading-relaxed space-y-1 mb-6 bg-gray-50 p-4 rounded-lg shadow-inner"
+          >
+            <p><span class="font-semibold text-gray-700">Material:</span> Aluminium</p>
+            <p><span class="font-semibold text-gray-700">IP Rating:</span> IP54</p>
+            <p><span class="font-semibold text-gray-700">Power (W):</span> 18 W</p>
+            <p><span class="font-semibold text-gray-700">Type:</span> LED Pole Light</p>
+            <p>
+              <span class="font-semibold text-gray-700">Country of Origin:</span>
+              Made in India
+            </p>
+          </div>
+
+          <h3
+            class="text-lg font-semibold text-blue-700 mb-3 border-l-4 border-blue-500 pl-2"
+          >
+            Product Details
+          </h3>
+
+          <ul class="list-disc list-inside text-sm space-y-2 mb-8 text-gray-700">
+            <li>100W Hi Power LED with Circular Ring</li>
+            <li>Aluminium Die Casting Frost PC</li>
+            <li>Bollard/Gate Top Light: 750MM</li>
+            <li>Lumens: 5400</li>
+            <li>IP54 - 3000K</li>
+          </ul>
+
+          <!-- Button -->
+          <button
+            class="relative overflow-hidden bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white text-base font-semibold py-3 px-8 rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 w-full md:w-auto group"
+          >
+            <span
+              class="absolute inset-0 bg-blue-500 opacity-0 group-hover:opacity-20 transition-opacity duration-300"
+            ></span>
+            Enquire Now
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+    <script>
+      // Load navbar and footer dynamically
+  fetch("navbar.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("navbar-placeholder").innerHTML = data;
+
+          // Reinitialize navbar interactivity manually after inserting HTML
+          const hamburger = document.querySelector("#hamburger");
+          const mobileMenu = document.querySelector("#mobile-menu");
+          const menuIcon = document.querySelector("#menu-icon");
+          const closeIcon = document.querySelector("#close-icon");  
+          const mobileProductsBtn = document.querySelector(
+            "#mobile-products-btn"
+          );
+          const mobileProductsMenu = document.querySelector(
+            "#mobile-products-menu"
+          );
+          const mobileArrow = document.querySelector("#mobile-arrow");
+
+          // Toggle main mobile menu
+          if (hamburger && mobileMenu) {
+            hamburger.addEventListener("click", () => {
+              mobileMenu.classList.toggle("hidden");
+              menuIcon.classList.toggle("hidden");
+              closeIcon.classList.toggle("hidden");
+            });
+          }
+
+          // Toggle product dropdown inside mobile menu
+          if (mobileProductsBtn && mobileProductsMenu) {
+            mobileProductsBtn.addEventListener("click", () => {
+              mobileProductsMenu.classList.toggle("hidden");
+              mobileArrow.classList.toggle("rotate-180");
+            });
+          }
+        })
+        .catch(console.error);
+
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then(
+          (data) =>
+            (document.getElementById("footer-placeholder").innerHTML = data)
+        )
+        .catch(console.error);
+
+      // Image switch functionality
+      const mainImage = document.getElementById("main-image");
+      const thumbnails = document.querySelectorAll(".thumb");
+
+      thumbnails.forEach((thumb) => {
+        thumb.addEventListener("click", () => {
+          // Update main image source
+          mainImage.src = thumb.src;
+
+          // Update active border
+          thumbnails.forEach((t) => t.classList.remove("border-2", "border-blue-600"));
+          thumb.classList.add("border-2", "border-blue-600");
+
+          // Smooth fade-in effect
+          mainImage.classList.add("opacity-0");
+          setTimeout(() => {
+            mainImage.classList.remove("opacity-0");
+          }, 150);
+        });
+      });
+    </script>
+  </body>
+</html>

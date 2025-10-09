@@ -1,112 +1,244 @@
-<nav class="bg-white shadow w-full sticky h-24">
-  <div class="max-w-7xl sticky mx-auto px-4">
-    <div class="flex justify-between items-center h-16">
-      <a href="index.html" class="flex items-center space-x-2 mt-6">
-        <img
-          src="https://utkarshindia.in/assets/frontendcss/images/logo.webp"
-          alt="UTKARSH Logo"
-          class="object-contain w-[113px] h-[44px]"
-        />
-      </a>
-      <!-- Hamburger menu button -->
-      <div class="lg:hidden">
-        <button id="nav-toggle" class="text-gray-800 focus:outline-none">
-          <svg
-            class="w-6 h-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Utkarsh Navbar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-50">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+          <!-- Logo -->
+          <div class="flex-shrink-0">
+            <a href="index.html" class="flex items-center">
+              <img
+                src="/src/images/logo.webp"
+                alt="Utkarsh Logo"
+                class="h-12"
+              />
+            </a>
+          </div>
+
+          <!-- Desktop Navigation -->
+          <div class="hidden md:flex items-center space-x-8">
+            <a
+              href="about_us.html"
+              class="text-gray-700 hover:text-teal-600 font-medium transition duration-200"
+            >
+              About Us
+            </a>
+
+            <!-- Products Dropdown -->
+            <div class="relative group">
+              <button
+                class="flex items-center text-gray-700 hover:text-teal-600 font-medium transition-all duration-300 ease-out transform group-hover:scale-105 group-hover:text-teal-600"
+              >
+                Products
+                <svg
+                  class="ml-1 w-4 h-4 transition-transform duration-300 ease-out group-hover:rotate-180"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </button>
+
+              <!-- Dropdown Menu -->
+              <div
+                class="absolute left-0 mt-2 w-48 bg-gray-50 rounded-md shadow-lg transform scale-95 opacity-0 invisible group-hover:opacity-100 group-hover:visible group-hover:scale-100 transition-all duration-300 ease-out z-50"
+              >
+                <div class="py-2">
+                  <a
+                    href="shop_product.html"
+                    class="block px-4 py-2 text-gray-700 hover:bg-teal-100 hover:text-teal-600 transition-all duration-300 ease-out transform translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 delay-75"
+                  >
+                    Shop
+                  </a>
+                  <a
+                    href="product_details.html"
+                    class="block px-4 py-2 text-gray-700 hover:bg-teal-100 hover:text-teal-600 transition-all duration-300 ease-out transform translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 delay-100"
+                  >
+                    Product Detail
+                  </a>
+                  <a
+                    href="shop_product.html"
+                    class="block px-4 py-2 text-gray-700 hover:bg-teal-100 hover:text-teal-600 transition-all duration-300 ease-out transform translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 delay-150"
+                  >
+                    Noise Barrier
+                  </a>
+                  <a
+                    href="product_details.html"
+                    class="block px-4 py-2 text-gray-700 hover:bg-teal-100 hover:text-teal-600 transition-all duration-300 ease-out transform translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 delay-200"
+                  >
+                    Reflective Noise Barrier
+                  </a>
+                  <a
+                    href="shop_product.html"
+                    class="block px-4 py-2 text-gray-700 hover:bg-teal-100 hover:text-teal-600 transition-all duration-300 ease-out transform translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 delay-300"
+                  >
+                    Solid Polycarbonate sheet
+                  </a>
+                  <a
+                    href="product_details.html"
+                    class="block px-4 py-2 text-gray-700 hover:bg-teal-100 hover:text-teal-600 transition-all duration-300 ease-out transform translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 delay-500"
+                  >
+                    Multiwall Polycarbonate sheet
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <a
+              href="our_client.html"
+              class="text-gray-700 hover:text-teal-600 font-medium transition duration-200"
+            >
+              Our Clients
+            </a>
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <div class="md:hidden">
+            <button
+              id="hamburger"
+              class="text-gray-700 hover:text-teal-600 focus:outline-none"
+            >
+              <!-- Menu Icon -->
+              <svg
+                id="menu-icon"
+                class="h-6 w-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+
+              <!-- Close Icon -->
+              <svg
+                id="close-icon"
+                class="h-6 w-6 hidden"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-white border-t border-gray-200"
+      >
+        <div class="px-4 pt-2 pb-4 space-y-2">
+          <a
+            href="index.html"
+            class="block px-3 py-2 text-gray-700 hover:bg-teal-50 hover:text-teal-600 rounded-md transition duration-200"
           >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M4 6h16M4 12h16M4 18h16"
-            />
-          </svg>
-        </button>
-      </div>
-      <!-- Menu -->
+            Home
+          </a>
+          <a
+            href="about_us.html"
+            class="block px-3 py-2 text-gray-700 hover:bg-teal-50 hover:text-teal-600 rounded-md transition duration-200"
+          >
+            About Us
+          </a>
 
-      <div id="nav-menu" class="hidden lg:flex lg:space-x-4 mt-6">
-        <a
-          href="about_us.html"
-          class="flex items-center text-gray-600 hover:text-blue-700 px-3 py-2 rounded transition"
-        >
-          <span>About us</span>
-          <img
-            class="ml-2 pt-1"
-            width="16"
-            height="16"
-            src="https://utkarshindia.in/assets/frontendcss/images/menu-drop-icon.webp"
-            alt="dropdown icon"
-          />
-        </a>
-        <a
-          href="products.html"
-          class="flex items-center justify-center text-gray-600 hover:text-blue-700 px-3 py-2 rounded transition"
-        >
-          <span>Products</span>
-          <img
-            class="ml-2 pt-1"
-            width="16"
-            height="16"
-            src="https://utkarshindia.in/assets/frontendcss/images/menu-drop-icon.webp"
-            alt="dropdown icon"
-          />
-        </a>
-        <a
-          href="our_client.html"
-          class="flex items-center justify-center text-gray-600 hover:text-blue-700 px-3 py-2 rounded transition"
-        >
-          <span>Our Clients</span>
-          <img
-            class="ml-2 pt-1"
-            width="16"
-            height="16"
-            src="https://utkarshindia.in/assets/frontendcss/images/menu-drop-icon.webp"
-            alt="dropdown icon"
-          />
-        </a>
-        <a
-          href="products.html"
-          class="flex items-center justify-center text-gray-600 hover:text-blue-700 px-3 py-2 rounded transition"
-        >
-          <span>Products</span>
-          <img
-            class="ml-2 pt-1"
-            width="16"
-            height="16"
-            src="https://utkarshindia.in/assets/frontendcss/images/menu-drop-icon.webp"
-            alt="dropdown icon"
-          />
-        </a>
-      </div>
-    </div>
-  </div>
-  <!-- Mobile Menu  -->
-  <div id="nav-menu-mobile" class="lg:hidden hidden px-4 pb-2">
-    <a
-      href="about_us.html"
-      class="block text-gray-600 hover:text-blue-700 px-3 py-2 rounded transition"
-      >About us</a
-    >
-    <a
-      href="products.html"
-      class="block text-gray-600 hover:text-blue-700 px-3 py-2 rounded transition"
-      >Products</a
-    >
-  </div>
+          <!-- Mobile Products Dropdown -->
+          <div>
+            <button
+              id="mobile-products-btn"
+              class="w-full flex items-center justify-between px-3 py-2 text-gray-700 hover:bg-teal-50 hover:text-teal-600 rounded-md transition duration-200"
+            >
+              <span>Products</span>
+              <svg
+                id="mobile-arrow"
+                class="w-4 h-4 transition-transform duration-200"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                ></path>
+              </svg>
+            </button>
+            <div id="mobile-products-menu" class="hidden pl-6 mt-1 space-y-1">
+              <a
+                href="shop_product.html"
+                class="block px-3 py-2 text-gray-600 hover:bg-teal-50 hover:text-teal-600 rounded-md transition duration-200"
+              >
+                Shop
+              </a>
+              <a
+                href="product_details.html"
+                class="block px-3 py-2 text-gray-600 hover:bg-teal-50 hover:text-teal-600 rounded-md transition duration-200"
+              >
+                Product Detail
+              </a>
+            </div>
+          </div>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const navToggle = document.getElementById("nav-toggle");
-      const navMenuMobile = document.getElementById("nav-menu-mobile");
-      if (navToggle) {
-        navToggle.addEventListener("click", () => {
-          navMenuMobile.classList.toggle("hidden");
-        });
-      }
-    });
-  </script>
-</nav>
+          <a
+            href="our_client.html"
+            class="block px-3 py-2 text-gray-700 hover:bg-teal-50 hover:text-teal-600 rounded-md transition duration-200"
+          >
+            Our Clients
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <script>
+      // Mobile menu toggle
+      const mobileMenuBtn = document.getElementById("hamburger");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const menuIcon = document.getElementById("menu-icon");
+      const closeIcon = document.getElementById("close-icon");
+
+      mobileMenuBtn.addEventListener("click", () => {
+        console.log("✅ Mobile menu button clicked");
+        mobileMenu.classList.toggle("hidden");
+        menuIcon.classList.toggle("hidden");
+        closeIcon.classList.toggle("hidden");
+      });
+
+      // Mobile products dropdown toggle
+      const mobileProductsBtn = document.getElementById("mobile-products-btn");
+      const mobileProductsMenu = document.getElementById(
+        "mobile-products-menu"
+      );
+      const mobileArrow = document.getElementById("mobile-arrow");
+
+      mobileProductsBtn.addEventListener("click", () => {
+        mobileProductsMenu.classList.toggle("hidden");
+        mobileArrow.classList.toggle("rotate-180");
+      });
+    </script>
+  </body>
+</html>
