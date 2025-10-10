@@ -187,41 +187,36 @@
     <div id="footer-placeholder"></div>
 
     <script>
-     fetch("navbar.html")
+   // ---------- load navbar ----------
+      fetch("navbar.html")
         .then((res) => res.text())
         .then((data) => {
-          document.getElementById("navbar-placeholder").innerHTML = data;
+          const navbarPlaceholder =
+            document.getElementById("navbar-placeholder");
+          navbarPlaceholder.innerHTML = data;
 
-          // Reinitialize navbar interactivity manually after inserting HTML
-          const hamburger = document.querySelector("#hamburger");
-          const mobileMenu = document.querySelector("#mobile-menu");
-          const menuIcon = document.querySelector("#menu-icon");
-          const closeIcon = document.querySelector("#close-icon");  
-          const mobileProductsBtn = document.querySelector(
-            "#mobile-products-btn"
-          );
-          const mobileProductsMenu = document.querySelector(
-            "#mobile-products-menu"
-          );
-          const mobileArrow = document.querySelector("#mobile-arrow");
-
-          // Toggle main mobile menu
-          if (hamburger && mobileMenu) {
-            hamburger.addEventListener("click", () => {
-              mobileMenu.classList.toggle("hidden");
-              menuIcon.classList.toggle("hidden");
-              closeIcon.classList.toggle("hidden");
-            });
-          }
-
-          // Toggle product dropdown inside mobile menu
-          if (mobileProductsBtn && mobileProductsMenu) {
-            mobileProductsBtn.addEventListener("click", () => {
-              mobileProductsMenu.classList.toggle("hidden");
-              mobileArrow.classList.toggle("rotate-180");
-            });
-          }
+          // Extract and run any <script> tags inside navbar.html
+          const tempDiv = document.createElement("div");
+          tempDiv.innerHTML = data;
+          const scripts = tempDiv.querySelectorAll("script");
+          scripts.forEach((oldScript) => {
+            const newScript = document.createElement("script");
+            if (oldScript.src) {
+              newScript.src = oldScript.src;
+            } else {
+              newScript.textContent = oldScript.textContent;
+            }
+            document.body.appendChild(newScript);
+          });
         })
+        .catch(console.error);
+
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then(
+          (data) =>
+            (document.getElementById("footer-placeholder").innerHTML = data)
+        )
         .catch(console.error);
 
       fetch("footer.html")

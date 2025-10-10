@@ -6,6 +6,7 @@
     <title>Utkarsh Navbar</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
+
   <body class="bg-gray-50">
     <!-- Navbar -->
     <nav class="bg-white shadow-md">
@@ -26,7 +27,7 @@
           <div class="hidden md:flex items-center space-x-8">
             <a
               href="about_us.html"
-              class="text-gray-700 hover:text-teal-600 font-medium transition duration-200"
+              class="text-gray-800 hover:text-teal-600 font-medium transition duration-200"
             >
               About Us
             </a>
@@ -34,7 +35,7 @@
             <!-- Products Dropdown -->
             <div class="relative group">
               <button
-                class="flex items-center text-gray-700 hover:text-teal-600 font-medium transition-all duration-300 ease-out transform group-hover:scale-105 group-hover:text-teal-600"
+                class="flex items-center text-gray-800 hover:text-teal-600 font-medium transition-all duration-300 ease-out transform group-hover:scale-105 group-hover:text-teal-600"
               >
                 Products
                 <svg
@@ -59,39 +60,39 @@
                 <div class="py-2">
                   <a
                     href="shop_product.html"
-                    class="block px-4 py-2 text-gray-700 hover:bg-teal-100 hover:text-teal-600 transition-all duration-300 ease-out transform translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 delay-75"
+                    class="block px-4 py-2 text-gray-800 hover:bg-teal-100 hover:text-teal-600 transition-all duration-300 ease-out transform translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 delay-75"
                   >
                     Shop
                   </a>
                   <a
                     href="product_details.html"
-                    class="block px-4 py-2 text-gray-700 hover:bg-teal-100 hover:text-teal-600 transition-all duration-300 ease-out transform translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 delay-100"
+                    class="block px-4 py-2 text-gray-800 hover:bg-teal-100 hover:text-teal-600 transition-all duration-300 ease-out transform translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 delay-100"
                   >
                     Product Detail
                   </a>
                   <a
                     href="shop_product.html"
-                    class="block px-4 py-2 text-gray-700 hover:bg-teal-100 hover:text-teal-600 transition-all duration-300 ease-out transform translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 delay-150"
+                    class="block px-4 py-2 text-gray-800 hover:bg-teal-100 hover:text-teal-600 transition-all duration-300 ease-out transform translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 delay-150"
                   >
                     Noise Barrier
                   </a>
                   <a
                     href="product_details.html"
-                    class="block px-4 py-2 text-gray-700 hover:bg-teal-100 hover:text-teal-600 transition-all duration-300 ease-out transform translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 delay-200"
+                    class="block px-4 py-2 text-gray-800 hover:bg-teal-100 hover:text-teal-600 transition-all duration-300 ease-out transform translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 delay-200"
                   >
                     Reflective Noise Barrier
                   </a>
                   <a
                     href="shop_product.html"
-                    class="block px-4 py-2 text-gray-700 hover:bg-teal-100 hover:text-teal-600 transition-all duration-300 ease-out transform translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 delay-300"
+                    class="block px-4 py-2 text-gray-800 hover:bg-teal-100 hover:text-teal-600 transition-all duration-300 ease-out transform translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 delay-300"
                   >
-                    Solid Polycarbonate sheet
+                    Solid Polycarbonate Sheet
                   </a>
                   <a
                     href="product_details.html"
-                    class="block px-4 py-2 text-gray-700 hover:bg-teal-100 hover:text-teal-600 transition-all duration-300 ease-out transform translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 delay-500"
+                    class="block px-4 py-2 text-gray-800 hover:bg-teal-100 hover:text-teal-600 transition-all duration-300 ease-out transform translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 delay-500"
                   >
-                    Multiwall Polycarbonate sheet
+                    Multiwall Polycarbonate Sheet
                   </a>
                 </div>
               </div>
@@ -99,7 +100,7 @@
 
             <a
               href="our_client.html"
-              class="text-gray-700 hover:text-teal-600 font-medium transition duration-200"
+              class="text-gray-800 hover:text-teal-600 font-medium transition duration-200"
             >
               Our Clients
             </a>
@@ -109,7 +110,7 @@
           <div class="md:hidden">
             <button
               id="hamburger"
-              class="text-gray-700 hover:text-teal-600 focus:outline-none"
+              class="text-gray-800 hover:text-teal-600 focus:outline-none"
             >
               <!-- Menu Icon -->
               <svg
@@ -150,32 +151,53 @@
       <!-- Mobile Menu -->
       <div
         id="mobile-menu"
-        class="hidden md:hidden bg-white border-t border-gray-200"
+        class="fixed top-0 right-0 w-full h-full bg-white shadow-xl transform translate-x-full transition-transform duration-500 ease-in-out z-50 md:hidden"
       >
-        <div class="px-4 pt-2 pb-4 space-y-2">
+        <div class="p-5 flex justify-between items-center shadow-md border-b">
+          <img src="/src/images/logo.webp" alt="Utkarsh Logo" class="h-10" />
+          <button id="close-menu" class="text-gray-800 hover:text-teal-600">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <div
+          class="px-4 pt-4 pb-6 space-y-2 overflow-y-auto h-[calc(100%-4rem)]"
+        >
           <a
             href="index.html"
-            class="block px-3 py-2 text-gray-700 hover:bg-teal-50 hover:text-teal-600 rounded-md transition duration-200"
+            class="block px-3 py-2 border-b border-gray-300 text-gray-800 font-bold hover:bg-teal-50 hover:text-teal-600 rounded-md transition duration-200"
+            >Home</a
           >
-            Home
-          </a>
+
           <a
             href="about_us.html"
-            class="block px-3 py-2 text-gray-700 hover:bg-teal-50 hover:text-teal-600 rounded-md transition duration-200"
+            class="block px-3 py-2 border-b border-gray-300 text-gray-800 font-bold hover:bg-teal-50 hover:text-teal-600 rounded-md transition duration-200"
+            >About Us</a
           >
-            About Us
-          </a>
 
           <!-- Mobile Products Dropdown -->
           <div>
             <button
               id="mobile-products-btn"
-              class="w-full flex items-center justify-between px-3 py-2 text-gray-700 hover:bg-teal-50 hover:text-teal-600 rounded-md transition duration-200"
+              class="w-full flex items-center justify-between px-3 py-2 border-b border-gray-300 text-gray-800 font-bold hover:bg-teal-50 hover:text-teal-600 rounded-md transition duration-200"
             >
               <span>Products</span>
               <svg
                 id="mobile-arrow"
-                class="w-4 h-4 transition-transform duration-200"
+                class="w-4 h-4 transition-transform duration-300"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -188,56 +210,135 @@
                 ></path>
               </svg>
             </button>
-            <div id="mobile-products-menu" class="hidden pl-6 mt-1 space-y-1">
+
+            <!-- Animated Dropdown -->
+            <div
+              id="mobile-products-menu"
+              class="max-h-0 overflow-hidden pl-6 mt-1 space-y-1 transition-all duration-500 ease-out transform scale-95 opacity-0"
+            >
               <a
                 href="shop_product.html"
-                class="block px-3 py-2 text-gray-600 hover:bg-teal-50 hover:text-teal-600 rounded-md transition duration-200"
+                class="block px-3 py-2 text-gray-800 font-bold hover:bg-teal-50 hover:text-teal-600 rounded-md transition-all duration-300 ease-out transform translate-y-2 opacity-0"
+                >Shop</a
               >
-                Shop
-              </a>
               <a
                 href="product_details.html"
-                class="block px-3 py-2 text-gray-600 hover:bg-teal-50 hover:text-teal-600 rounded-md transition duration-200"
+                class="block px-3 py-2 text-gray-800 font-bold hover:bg-teal-50 hover:text-teal-600 rounded-md transition-all duration-300 ease-out transform translate-y-2 opacity-0 delay-75"
+                >Product Detail</a
               >
-                Product Detail
-              </a>
+              <a
+                href="shop_product.html"
+                class="block px-3 py-2 text-gray-800 font-bold hover:bg-teal-50 hover:text-teal-600 rounded-md transition-all duration-300 ease-out transform translate-y-2 opacity-0 delay-100"
+                >Noise Barrier</a
+              >
+              <a
+                href="product_details.html"
+                class="block px-3 py-2 text-gray-800 font-bold hover:bg-teal-50 hover:text-teal-600 rounded-md transition-all duration-300 ease-out transform translate-y-2 opacity-0 delay-150"
+                >Reflective Noise Barrier</a
+              >
+              <a
+                href="shop_product.html"
+                class="block px-3 py-2 text-gray-800 font-bold hover:bg-teal-50 hover:text-teal-600 rounded-md transition-all duration-300 ease-out transform translate-y-2 opacity-0 delay-200"
+                >Solid Polycarbonate Sheet</a
+              >
+              <a
+                href="product_details.html"
+                class="block px-3 py-2 text-gray-800 font-bold hover:bg-teal-50 hover:text-teal-600 rounded-md transition-all duration-300 ease-out transform translate-y-2 opacity-0 delay-300"
+                >Multiwall Polycarbonate Sheet</a
+              >
             </div>
           </div>
 
           <a
             href="our_client.html"
-            class="block px-3 py-2 text-gray-700 hover:bg-teal-50 hover:text-teal-600 rounded-md transition duration-200"
+            class="block px-3 py-2 border-b border-gray-300 text-gray-800 font-bold hover:bg-teal-50 hover:text-teal-600 rounded-md transition duration-200"
+            >Our Clients</a
           >
-            Our Clients
-          </a>
         </div>
       </div>
     </nav>
 
     <script>
-      // Mobile menu toggle
-      const mobileMenuBtn = document.getElementById("hamburger");
+      const hamburger = document.getElementById("hamburger");
       const mobileMenu = document.getElementById("mobile-menu");
-      const menuIcon = document.getElementById("menu-icon");
-      const closeIcon = document.getElementById("close-icon");
-
-      mobileMenuBtn.addEventListener("click", () => {
-        console.log("✅ Mobile menu button clicked");
-        mobileMenu.classList.toggle("hidden");
-        menuIcon.classList.toggle("hidden");
-        closeIcon.classList.toggle("hidden");
-      });
-
-      // Mobile products dropdown toggle
+      const closeMenu = document.getElementById("close-menu");
       const mobileProductsBtn = document.getElementById("mobile-products-btn");
       const mobileProductsMenu = document.getElementById(
         "mobile-products-menu"
       );
       const mobileArrow = document.getElementById("mobile-arrow");
 
+      // Open mobile menu
+      hamburger.addEventListener("click", () => {
+        mobileMenu.classList.remove("translate-x-full");
+        mobileMenu.classList.add("translate-x-0");
+      });
+
+      // Close mobile menu
+      closeMenu.addEventListener("click", () => {
+        mobileMenu.classList.add("translate-x-full");
+        mobileMenu.classList.remove("translate-x-0");
+      });
+
+      // Products dropdown toggle (smooth open/close)
       mobileProductsBtn.addEventListener("click", () => {
-        mobileProductsMenu.classList.toggle("hidden");
-        mobileArrow.classList.toggle("rotate-180");
+        const isOpen = mobileProductsMenu.classList.contains("max-h-96");
+
+        if (isOpen) {
+          // Closing dropdown
+          mobileProductsMenu.classList.remove(
+            "max-h-96",
+            "opacity-100",
+            "scale-100"
+          );
+          mobileProductsMenu.classList.add("max-h-0", "opacity-0", "scale-95");
+          mobileArrow.classList.remove("rotate-180");
+
+          // Reset button to normal
+          mobileProductsBtn.classList.remove(
+            "bg-gradient-to-r",
+            "from-[#19a361]",
+            "to-[#2277b4]",
+            "text-white"
+          );
+          mobileProductsBtn.classList.add("text-gray-700");
+
+          mobileProductsMenu
+            .querySelectorAll("a")
+            .forEach((item) =>
+              item.classList.add("translate-y-2", "opacity-0")
+            );
+        } else {
+          // Opening dropdown
+          mobileProductsMenu.classList.remove(
+            "max-h-0",
+            "opacity-0",
+            "scale-95"
+          );
+          mobileProductsMenu.classList.add(
+            "max-h-96",
+            "opacity-100",
+            "scale-100"
+          );
+          mobileArrow.classList.add("rotate-180");
+
+          // Add gradient background and white text
+          mobileProductsBtn.classList.add(
+            "bg-gradient-to-r",
+            "from-[#19a361]",
+            "to-[#2277b4]",
+            "text-white"
+          );
+          mobileProductsBtn.classList.remove("text-gray-700");
+
+          setTimeout(() => {
+            mobileProductsMenu
+              .querySelectorAll("a")
+              .forEach((item) =>
+                item.classList.remove("translate-y-2", "opacity-0")
+              );
+          }, 100);
+        }
       });
     </script>
   </body>
